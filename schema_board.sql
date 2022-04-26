@@ -10,4 +10,3 @@ CREATE TABLE IF NOT EXISTS post (
     updated_date timestamp NULL,
     PRIMARY KEY (id)
 );
-           

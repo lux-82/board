@@ -51,7 +51,7 @@ public class BoardController {
        //Iterable<Post> list = repository.findAll();
 	   //Iterable<Post> list = repository.findAllByOrderByUpdatedDateDesc();
 	   //Iterable<Post> list = repository.findAll(Sort.by(Sort.Direction.DESC, "updatedDate"));
-	   repository.findByDeletedFalseOrderByUpdatedDateDesc();
+	   Iterable<Post> list = repository.findByDeletedFalseOrderByUpdatedDateDesc();
 	   model.addAttribute("list", list);
        return model;
    }
